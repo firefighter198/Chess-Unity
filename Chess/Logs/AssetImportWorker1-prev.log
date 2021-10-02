@@ -1,0 +1,820 @@
+Using pre-set license
+Built from '2021.1/staging' branch; Version is '2021.1.13f1 (a03098edbbe0) revision 10498200'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 22000.194; Version 2009; 64bit' Language: 'en' Physical Memory: 16299 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.1.13f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+F:/Unity Projects/Chess
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+54010
+Successfully changed project path to: F:/Unity Projects/Chess
+F:/Unity Projects/Chess
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 110.24 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.13f1 (a03098edbbe0)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.13f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/Unity Projects/Chess/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Vendor:   NVIDIA
+    VRAM:     6052 MB
+    Driver:   30.0.14.7141
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.13f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.13f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56180
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001729 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 111.70 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.968 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1968ms)
+		BeginReloadAssembly (54ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (526ms)
+			LoadAssemblies (52ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (186ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (259ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (112ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (107ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004578 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\Unity Projects\Chess\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\Unity Projects\Chess\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 123.28 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.430 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1431ms)
+		BeginReloadAssembly (173ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1197ms)
+			LoadAssemblies (107ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (390ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (553ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (123ms)
+				BeforeProcessingInitializeOnLoad (109ms)
+				ProcessInitializeOnLoadAttributes (292ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.78 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3672 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.4 MB.
+System memory in use after: 136.5 MB.
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 4117.
+Total: 3.697000 ms (FindLiveObjects: 0.260400 ms CreateObjectMapping: 0.179700 ms MarkObjects: 3.121600 ms  DeleteObjects: 0.134100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/Game.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e1cdbfa906ea48c2b08a86f9cfab996') in 0.032151 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.52 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 23 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 64.0 MB.
+System memory in use after: 64.2 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 4117.
+Total: 3.342600 ms (FindLiveObjects: 0.296300 ms CreateObjectMapping: 0.199700 ms MarkObjects: 2.714000 ms  DeleteObjects: 0.131600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.50 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 23 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 64.1 MB.
+System memory in use after: 64.2 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 4117.
+Total: 3.635100 ms (FindLiveObjects: 0.248000 ms CreateObjectMapping: 0.174000 ms MarkObjects: 3.084400 ms  DeleteObjects: 0.127900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.34 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 23 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 64.1 MB.
+System memory in use after: 64.2 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 4117.
+Total: 3.605300 ms (FindLiveObjects: 0.256100 ms CreateObjectMapping: 0.185700 ms MarkObjects: 3.070800 ms  DeleteObjects: 0.091800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 357.844317 seconds.
+  path: Assets/Graphics/Characters/blackBishop.png
+  artifactKey: Guid(5ad9b75714610bf4c86cec69c4fdfc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackBishop.png using Guid(5ad9b75714610bf4c86cec69c4fdfc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ca306d13556c2098df27cda1ea1fe77') in 0.151074 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/Graphics/Characters/whiteQueen.png
+  artifactKey: Guid(7c3810169d4cdff4abcf1a32ccd94bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteQueen.png using Guid(7c3810169d4cdff4abcf1a32ccd94bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '296b6e899dc6dd573a24f0ae8b845968') in 0.018619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Graphics/Characters/blackQueen.png
+  artifactKey: Guid(cefa153c358d0d849aa87c0060366220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackQueen.png using Guid(cefa153c358d0d849aa87c0060366220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8524cf9f1ac68e33e7fb9164a6c9c86c') in 0.017454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Graphics/Characters/whiteKnight.png
+  artifactKey: Guid(b60cb63960a9aa04ea6cc2fb27108d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteKnight.png using Guid(b60cb63960a9aa04ea6cc2fb27108d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ba6fbb141d789ce3938a7f75fbac17b') in 0.017075 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/Graphics/Characters/whiteBishop.png
+  artifactKey: Guid(20ce2b33bbde76f4ca8a40e07dfe268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteBishop.png using Guid(20ce2b33bbde76f4ca8a40e07dfe268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06b3cce40e290c77ba00cc2f323f4b14') in 0.015870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Graphics/Characters/whiteRook.png
+  artifactKey: Guid(2940e28a1caefed45adfa57795b6b5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteRook.png using Guid(2940e28a1caefed45adfa57795b6b5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3f980c661d07c2084967d4d15ef01c4') in 0.016388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Graphics/Characters/whiteKing.png
+  artifactKey: Guid(d5621a225fbee1345a5c900f375fc159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteKing.png using Guid(d5621a225fbee1345a5c900f375fc159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3367e6cbc066b48559ccfe0bd37666b8') in 0.016407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Graphics/Characters/blackRook.png
+  artifactKey: Guid(3f9ec07b6cae8a144ab7674cf0f115d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackRook.png using Guid(3f9ec07b6cae8a144ab7674cf0f115d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5daf04ec5c29eaae2cdd7fd13be13a6') in 0.016945 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Graphics/Characters/whitePawn.png
+  artifactKey: Guid(47b724ef5f1f4bc48a608c80df4940df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whitePawn.png using Guid(47b724ef5f1f4bc48a608c80df4940df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c501b1cc359c12c564fab62ffd0c4a7') in 0.016568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Graphics/Characters/blackPawn.png
+  artifactKey: Guid(03eeda42f4c4db5458d4441eb8049128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackPawn.png using Guid(03eeda42f4c4db5458d4441eb8049128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0053a1bf08db17cc1c34a84d968fbc3c') in 0.044770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Graphics/Characters/blackKnight.png
+  artifactKey: Guid(51758841b7ebece46b8c25b547faed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackKnight.png using Guid(51758841b7ebece46b8c25b547faed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '307017426ac4763d1395a1a4c0cd2086') in 0.014023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Graphics/Characters/blackKing.png
+  artifactKey: Guid(68fbc23387e93dd4da9cb42902f527d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackKing.png using Guid(68fbc23387e93dd4da9cb42902f527d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37f97807afc0c3ff479696b96a2cc8c7') in 0.016883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.215895 seconds.
+  path: Assets/Graphics/Characters/blackBishop.png
+  artifactKey: Guid(5ad9b75714610bf4c86cec69c4fdfc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackBishop.png using Guid(5ad9b75714610bf4c86cec69c4fdfc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b40d9c28e01819b68549099c3b500036') in 0.011331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Graphics/Characters/whiteQueen.png
+  artifactKey: Guid(7c3810169d4cdff4abcf1a32ccd94bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteQueen.png using Guid(7c3810169d4cdff4abcf1a32ccd94bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b4e068fcc848a299ff52b36c6f1aff5') in 0.010821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Graphics/Characters/blackQueen.png
+  artifactKey: Guid(cefa153c358d0d849aa87c0060366220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackQueen.png using Guid(cefa153c358d0d849aa87c0060366220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acd17aaf87ee241674940cf854805b47') in 0.009959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Graphics/Characters/whiteKnight.png
+  artifactKey: Guid(b60cb63960a9aa04ea6cc2fb27108d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteKnight.png using Guid(b60cb63960a9aa04ea6cc2fb27108d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea44391e973a3c4d31bf6da6bd88228c') in 0.011281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/Graphics/Characters/whiteBishop.png
+  artifactKey: Guid(20ce2b33bbde76f4ca8a40e07dfe268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteBishop.png using Guid(20ce2b33bbde76f4ca8a40e07dfe268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd5de0d5440de203987477c50f2d5c77') in 0.017455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Graphics/Characters/whiteRook.png
+  artifactKey: Guid(2940e28a1caefed45adfa57795b6b5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteRook.png using Guid(2940e28a1caefed45adfa57795b6b5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74ba44b2a40b74b8b9e628ce7d5fc36f') in 0.009537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000609 seconds.
+  path: Assets/Graphics/Characters/whiteKing.png
+  artifactKey: Guid(d5621a225fbee1345a5c900f375fc159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteKing.png using Guid(d5621a225fbee1345a5c900f375fc159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00bded56284b7947efccd4f63bd5ceaa') in 0.010925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Graphics/Characters/blackRook.png
+  artifactKey: Guid(3f9ec07b6cae8a144ab7674cf0f115d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackRook.png using Guid(3f9ec07b6cae8a144ab7674cf0f115d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63b1c2f2457099ef4327c41465fe264a') in 0.009402 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Graphics/Characters/whitePawn.png
+  artifactKey: Guid(47b724ef5f1f4bc48a608c80df4940df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whitePawn.png using Guid(47b724ef5f1f4bc48a608c80df4940df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc9dd38db07e1d0d7ef905291d168193') in 0.009403 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Graphics/Characters/blackPawn.png
+  artifactKey: Guid(03eeda42f4c4db5458d4441eb8049128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackPawn.png using Guid(03eeda42f4c4db5458d4441eb8049128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '693625a732e20ab253622330214ebe08') in 0.009147 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Graphics/Characters/blackKnight.png
+  artifactKey: Guid(51758841b7ebece46b8c25b547faed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackKnight.png using Guid(51758841b7ebece46b8c25b547faed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '512724f182d47ba0434beed663e60bb2') in 0.008688 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Graphics/Characters/blackKing.png
+  artifactKey: Guid(68fbc23387e93dd4da9cb42902f527d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackKing.png using Guid(68fbc23387e93dd4da9cb42902f527d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6eebf6ee07f3649c7d47070a7a32ac5') in 0.008812 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.155029 seconds.
+  path: Assets/Graphics/Characters/blackBishop.png
+  artifactKey: Guid(5ad9b75714610bf4c86cec69c4fdfc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackBishop.png using Guid(5ad9b75714610bf4c86cec69c4fdfc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbf583c03f2ba5455122c1c48bf94ea9') in 0.010413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Graphics/Characters/whiteQueen.png
+  artifactKey: Guid(7c3810169d4cdff4abcf1a32ccd94bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteQueen.png using Guid(7c3810169d4cdff4abcf1a32ccd94bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fedc79e7058896c9cdd06e267d456b2d') in 0.010929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Graphics/Characters/blackQueen.png
+  artifactKey: Guid(cefa153c358d0d849aa87c0060366220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackQueen.png using Guid(cefa153c358d0d849aa87c0060366220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0648ed30904bc1c377dae26a4247698b') in 0.014839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Graphics/Characters/whiteKnight.png
+  artifactKey: Guid(b60cb63960a9aa04ea6cc2fb27108d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteKnight.png using Guid(b60cb63960a9aa04ea6cc2fb27108d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '845c1398ac4c6daa131b8d5344007c70') in 0.012014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/Graphics/Characters/whiteBishop.png
+  artifactKey: Guid(20ce2b33bbde76f4ca8a40e07dfe268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteBishop.png using Guid(20ce2b33bbde76f4ca8a40e07dfe268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7221849b8c50ee9c971b80115ba30a1b') in 0.011314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/Graphics/Characters/whiteRook.png
+  artifactKey: Guid(2940e28a1caefed45adfa57795b6b5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteRook.png using Guid(2940e28a1caefed45adfa57795b6b5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dfb5a96118062e1306ea761b461fbfd') in 0.009530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Graphics/Characters/whiteKing.png
+  artifactKey: Guid(d5621a225fbee1345a5c900f375fc159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteKing.png using Guid(d5621a225fbee1345a5c900f375fc159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dfd3d33d420ebf404ecea61997d97f4') in 0.010240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Graphics/Characters/blackRook.png
+  artifactKey: Guid(3f9ec07b6cae8a144ab7674cf0f115d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackRook.png using Guid(3f9ec07b6cae8a144ab7674cf0f115d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64eb7dc86853ebf08e0ea20c9f713b9e') in 0.009456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Graphics/Characters/whitePawn.png
+  artifactKey: Guid(47b724ef5f1f4bc48a608c80df4940df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whitePawn.png using Guid(47b724ef5f1f4bc48a608c80df4940df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a32d0cceb72fefe2215f4dc89f49aea4') in 0.009719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Graphics/Characters/blackPawn.png
+  artifactKey: Guid(03eeda42f4c4db5458d4441eb8049128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackPawn.png using Guid(03eeda42f4c4db5458d4441eb8049128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d6031dd5c8fc67d80b6e5535249642') in 0.009966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Graphics/Characters/blackKnight.png
+  artifactKey: Guid(51758841b7ebece46b8c25b547faed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackKnight.png using Guid(51758841b7ebece46b8c25b547faed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cff0f53ee8ac50b2eb14c12e0171a16a') in 0.009115 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Graphics/Characters/blackKing.png
+  artifactKey: Guid(68fbc23387e93dd4da9cb42902f527d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackKing.png using Guid(68fbc23387e93dd4da9cb42902f527d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18e5219f1db2c6061fffe7ca860886db') in 0.009134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.551393 seconds.
+  path: Assets/Graphics/Characters/blackBishop.png
+  artifactKey: Guid(5ad9b75714610bf4c86cec69c4fdfc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackBishop.png using Guid(5ad9b75714610bf4c86cec69c4fdfc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bade6c27d34da8b5a4d22ae35ea1edc8') in 0.011904 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Graphics/Characters/whiteQueen.png
+  artifactKey: Guid(7c3810169d4cdff4abcf1a32ccd94bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteQueen.png using Guid(7c3810169d4cdff4abcf1a32ccd94bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43c455133a7265237bea8359193a20ea') in 0.009797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Graphics/Characters/blackQueen.png
+  artifactKey: Guid(cefa153c358d0d849aa87c0060366220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackQueen.png using Guid(cefa153c358d0d849aa87c0060366220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38ee46bb88bfb5bf28d12aa5bade9c09') in 0.011732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Graphics/Characters/whiteKnight.png
+  artifactKey: Guid(b60cb63960a9aa04ea6cc2fb27108d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteKnight.png using Guid(b60cb63960a9aa04ea6cc2fb27108d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38ca10594b198b57286680f9b05c481e') in 0.010415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Graphics/Characters/whiteBishop.png
+  artifactKey: Guid(20ce2b33bbde76f4ca8a40e07dfe268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteBishop.png using Guid(20ce2b33bbde76f4ca8a40e07dfe268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3ae083cf9f599eb4808f834fb5d3a68') in 0.010207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Graphics/Characters/whiteRook.png
+  artifactKey: Guid(2940e28a1caefed45adfa57795b6b5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteRook.png using Guid(2940e28a1caefed45adfa57795b6b5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '135a2a9dc911252737e903ac57dd2f21') in 0.009839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Graphics/Characters/whiteKing.png
+  artifactKey: Guid(d5621a225fbee1345a5c900f375fc159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteKing.png using Guid(d5621a225fbee1345a5c900f375fc159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b5268591be32dfa33cbd743c0a0f430') in 0.008550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Graphics/Characters/blackRook.png
+  artifactKey: Guid(3f9ec07b6cae8a144ab7674cf0f115d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackRook.png using Guid(3f9ec07b6cae8a144ab7674cf0f115d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05f66ff419f7c7e9e7a42377f8c6f148') in 0.009342 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Graphics/Characters/whitePawn.png
+  artifactKey: Guid(47b724ef5f1f4bc48a608c80df4940df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whitePawn.png using Guid(47b724ef5f1f4bc48a608c80df4940df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12474c661e065ee4e490b9c343e983c5') in 0.009774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Graphics/Characters/blackPawn.png
+  artifactKey: Guid(03eeda42f4c4db5458d4441eb8049128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackPawn.png using Guid(03eeda42f4c4db5458d4441eb8049128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38c9eec470b3ae2ef9a52dc52dbdb916') in 0.007676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Graphics/Characters/blackKnight.png
+  artifactKey: Guid(51758841b7ebece46b8c25b547faed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackKnight.png using Guid(51758841b7ebece46b8c25b547faed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19d8a59a7d97dd9b4412901c340da59c') in 0.009557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Graphics/Characters/blackKing.png
+  artifactKey: Guid(68fbc23387e93dd4da9cb42902f527d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackKing.png using Guid(68fbc23387e93dd4da9cb42902f527d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6b38c6e7f3d338ed744ad6cb81357bd') in 0.008019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.457882 seconds.
+  path: Assets/Graphics/Characters/blackBishop.png
+  artifactKey: Guid(5ad9b75714610bf4c86cec69c4fdfc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackBishop.png using Guid(5ad9b75714610bf4c86cec69c4fdfc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07fc8065e10508bd25e9e6438b1b132a') in 0.010744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Graphics/Characters/whiteQueen.png
+  artifactKey: Guid(7c3810169d4cdff4abcf1a32ccd94bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteQueen.png using Guid(7c3810169d4cdff4abcf1a32ccd94bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35e26e5ae07466816e329afbc08cc966') in 0.011340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Graphics/Characters/blackQueen.png
+  artifactKey: Guid(cefa153c358d0d849aa87c0060366220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackQueen.png using Guid(cefa153c358d0d849aa87c0060366220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6572dc67374f4457554c19285abad30f') in 0.014220 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000359 seconds.
+  path: Assets/Graphics/Characters/whiteKnight.png
+  artifactKey: Guid(b60cb63960a9aa04ea6cc2fb27108d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteKnight.png using Guid(b60cb63960a9aa04ea6cc2fb27108d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b3161fc57212cb432d1999bab93e567') in 0.009643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Graphics/Characters/whiteBishop.png
+  artifactKey: Guid(20ce2b33bbde76f4ca8a40e07dfe268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteBishop.png using Guid(20ce2b33bbde76f4ca8a40e07dfe268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bdd58ebc1e659a9359e0189f7a9d858') in 0.010588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Graphics/Characters/whiteRook.png
+  artifactKey: Guid(2940e28a1caefed45adfa57795b6b5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteRook.png using Guid(2940e28a1caefed45adfa57795b6b5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd284e151ccd64384b3a432d3bc3f5631') in 0.008440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Graphics/Characters/whiteKing.png
+  artifactKey: Guid(d5621a225fbee1345a5c900f375fc159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteKing.png using Guid(d5621a225fbee1345a5c900f375fc159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd73ef4dff7af13a89956d6267621650') in 0.007848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/Graphics/Characters/blackRook.png
+  artifactKey: Guid(3f9ec07b6cae8a144ab7674cf0f115d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackRook.png using Guid(3f9ec07b6cae8a144ab7674cf0f115d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea47d4e5354932036d1cbd4d29bd47c2') in 0.009094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Graphics/Characters/whitePawn.png
+  artifactKey: Guid(47b724ef5f1f4bc48a608c80df4940df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whitePawn.png using Guid(47b724ef5f1f4bc48a608c80df4940df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c7df2ce310b1c83e5b64010bb426251') in 0.009931 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Graphics/Characters/blackPawn.png
+  artifactKey: Guid(03eeda42f4c4db5458d4441eb8049128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackPawn.png using Guid(03eeda42f4c4db5458d4441eb8049128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b1ac570e759fe10c80119bf524bd1e1') in 0.009124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Graphics/Characters/blackKnight.png
+  artifactKey: Guid(51758841b7ebece46b8c25b547faed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackKnight.png using Guid(51758841b7ebece46b8c25b547faed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '973e721431842854328a413644a10c24') in 0.009561 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Graphics/Characters/blackKing.png
+  artifactKey: Guid(68fbc23387e93dd4da9cb42902f527d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackKing.png using Guid(68fbc23387e93dd4da9cb42902f527d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebcb2055d6355d075bb15e4f68afceb6') in 0.010110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.682282 seconds.
+  path: Assets/Graphics/Characters/blackBishop.png
+  artifactKey: Guid(5ad9b75714610bf4c86cec69c4fdfc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackBishop.png using Guid(5ad9b75714610bf4c86cec69c4fdfc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c487fd4de19701f1c56f30d9dd003ed0') in 0.009192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/Graphics/Characters/whiteQueen.png
+  artifactKey: Guid(7c3810169d4cdff4abcf1a32ccd94bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteQueen.png using Guid(7c3810169d4cdff4abcf1a32ccd94bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd222135cbe78b454eba683754b9da5e') in 0.010335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/Graphics/Characters/blackQueen.png
+  artifactKey: Guid(cefa153c358d0d849aa87c0060366220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackQueen.png using Guid(cefa153c358d0d849aa87c0060366220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb6cbba1fb6a123c8b2959c2f2b718e8') in 0.010196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/Graphics/Characters/whiteKnight.png
+  artifactKey: Guid(b60cb63960a9aa04ea6cc2fb27108d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteKnight.png using Guid(b60cb63960a9aa04ea6cc2fb27108d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '063f588deae78b613911737acc6e742c') in 0.011061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Graphics/Characters/whiteBishop.png
+  artifactKey: Guid(20ce2b33bbde76f4ca8a40e07dfe268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteBishop.png using Guid(20ce2b33bbde76f4ca8a40e07dfe268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '162a3ec759bb95bd56141afb9eacc3c5') in 0.011236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Graphics/Characters/whiteRook.png
+  artifactKey: Guid(2940e28a1caefed45adfa57795b6b5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteRook.png using Guid(2940e28a1caefed45adfa57795b6b5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '576f45b54b4e2516e5861aa07ea1ebfb') in 0.011129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Graphics/Characters/whiteKing.png
+  artifactKey: Guid(d5621a225fbee1345a5c900f375fc159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteKing.png using Guid(d5621a225fbee1345a5c900f375fc159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d758390bbeb8d355190cbf74f6b2db6') in 0.010564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Graphics/Characters/blackRook.png
+  artifactKey: Guid(3f9ec07b6cae8a144ab7674cf0f115d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackRook.png using Guid(3f9ec07b6cae8a144ab7674cf0f115d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94bd3bf7e7cdeb5c5742aee0915a9c8b') in 0.010863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Graphics/Characters/whitePawn.png
+  artifactKey: Guid(47b724ef5f1f4bc48a608c80df4940df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whitePawn.png using Guid(47b724ef5f1f4bc48a608c80df4940df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff7b1f06b43cf8a56186c6ffca2cedba') in 0.010730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Graphics/Characters/blackPawn.png
+  artifactKey: Guid(03eeda42f4c4db5458d4441eb8049128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackPawn.png using Guid(03eeda42f4c4db5458d4441eb8049128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b927ff90f1b33d366ac1f8c9ced5f2a') in 0.010713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Graphics/Characters/blackKnight.png
+  artifactKey: Guid(51758841b7ebece46b8c25b547faed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackKnight.png using Guid(51758841b7ebece46b8c25b547faed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c95e516bde3117d77276880dd18b0dab') in 0.009983 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Graphics/Characters/blackKing.png
+  artifactKey: Guid(68fbc23387e93dd4da9cb42902f527d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackKing.png using Guid(68fbc23387e93dd4da9cb42902f527d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c42d8f70f694d5d151a06cc54cc87dd') in 0.009177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.188913 seconds.
+  path: Assets/Graphics/Characters/blackBishop.png
+  artifactKey: Guid(5ad9b75714610bf4c86cec69c4fdfc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackBishop.png using Guid(5ad9b75714610bf4c86cec69c4fdfc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '232a6523212d6578eb1e704b7cb06492') in 0.018414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Graphics/Characters/whiteQueen.png
+  artifactKey: Guid(7c3810169d4cdff4abcf1a32ccd94bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteQueen.png using Guid(7c3810169d4cdff4abcf1a32ccd94bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e0464630a27b0c28a97b46bbeb609a0') in 0.019210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000427 seconds.
+  path: Assets/Graphics/Characters/blackQueen.png
+  artifactKey: Guid(cefa153c358d0d849aa87c0060366220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackQueen.png using Guid(cefa153c358d0d849aa87c0060366220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '934d66a8aa03b87068ac4889a9acc225') in 0.019707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/Graphics/Characters/whiteKnight.png
+  artifactKey: Guid(b60cb63960a9aa04ea6cc2fb27108d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteKnight.png using Guid(b60cb63960a9aa04ea6cc2fb27108d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8293e13e3a8db49301a1cb4d864da05') in 0.024528 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Graphics/Characters/whiteBishop.png
+  artifactKey: Guid(20ce2b33bbde76f4ca8a40e07dfe268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteBishop.png using Guid(20ce2b33bbde76f4ca8a40e07dfe268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbe5c7bfc147b603114b1b918b450918') in 0.015326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/Graphics/Characters/whiteRook.png
+  artifactKey: Guid(2940e28a1caefed45adfa57795b6b5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteRook.png using Guid(2940e28a1caefed45adfa57795b6b5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f5b211f4c6312e2c4d4f85529293c94') in 0.018582 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Graphics/Characters/whiteKing.png
+  artifactKey: Guid(d5621a225fbee1345a5c900f375fc159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteKing.png using Guid(d5621a225fbee1345a5c900f375fc159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9235939a1aca78c9755b2aa9c51ff6c8') in 0.018869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003339 seconds.
+  path: Assets/Graphics/Characters/blackRook.png
+  artifactKey: Guid(3f9ec07b6cae8a144ab7674cf0f115d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackRook.png using Guid(3f9ec07b6cae8a144ab7674cf0f115d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf90fb12952d122f912b46ad85f3a839') in 0.019586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Graphics/Characters/whitePawn.png
+  artifactKey: Guid(47b724ef5f1f4bc48a608c80df4940df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whitePawn.png using Guid(47b724ef5f1f4bc48a608c80df4940df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed522df545e72f901cf78af22400c1ac') in 0.014682 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Graphics/Characters/blackPawn.png
+  artifactKey: Guid(03eeda42f4c4db5458d4441eb8049128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackPawn.png using Guid(03eeda42f4c4db5458d4441eb8049128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b9ebe20994aed388853ad508a2327e5') in 0.053005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Graphics/Characters/blackKnight.png
+  artifactKey: Guid(51758841b7ebece46b8c25b547faed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackKnight.png using Guid(51758841b7ebece46b8c25b547faed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15fecd2362d7316a8f34f76b99568939') in 0.009181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Graphics/Characters/blackKing.png
+  artifactKey: Guid(68fbc23387e93dd4da9cb42902f527d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackKing.png using Guid(68fbc23387e93dd4da9cb42902f527d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6221f3355430d621d66cfd93f6170d9') in 0.011043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.774297 seconds.
+  path: Assets/Graphics/Characters/blackBishop.png
+  artifactKey: Guid(5ad9b75714610bf4c86cec69c4fdfc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackBishop.png using Guid(5ad9b75714610bf4c86cec69c4fdfc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bec9ade7bf8dd2f1163cdbb6cbb6aad4') in 0.013738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Graphics/Characters/whiteQueen.png
+  artifactKey: Guid(7c3810169d4cdff4abcf1a32ccd94bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteQueen.png using Guid(7c3810169d4cdff4abcf1a32ccd94bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f271ebcd25d4ea5c548141dc8f23c80d') in 0.011251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/Graphics/Characters/blackQueen.png
+  artifactKey: Guid(cefa153c358d0d849aa87c0060366220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackQueen.png using Guid(cefa153c358d0d849aa87c0060366220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90969e111ec6895c04f89c2fbdcfafc3') in 0.011459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000423 seconds.
+  path: Assets/Graphics/Characters/whiteKnight.png
+  artifactKey: Guid(b60cb63960a9aa04ea6cc2fb27108d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteKnight.png using Guid(b60cb63960a9aa04ea6cc2fb27108d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f312b4ec0ad3a587eb5785843a682424') in 0.010590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/Graphics/Characters/whiteBishop.png
+  artifactKey: Guid(20ce2b33bbde76f4ca8a40e07dfe268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteBishop.png using Guid(20ce2b33bbde76f4ca8a40e07dfe268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a94598183e073a157336a6d4092a3376') in 0.018527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000961 seconds.
+  path: Assets/Graphics/Characters/whiteRook.png
+  artifactKey: Guid(2940e28a1caefed45adfa57795b6b5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteRook.png using Guid(2940e28a1caefed45adfa57795b6b5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd45e12dcd7413e5718f8a33fd11c4e44') in 0.007938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Graphics/Characters/whiteKing.png
+  artifactKey: Guid(d5621a225fbee1345a5c900f375fc159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whiteKing.png using Guid(d5621a225fbee1345a5c900f375fc159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0de540a46e865682c7ef32844a75a479') in 0.008868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Graphics/Characters/blackRook.png
+  artifactKey: Guid(3f9ec07b6cae8a144ab7674cf0f115d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackRook.png using Guid(3f9ec07b6cae8a144ab7674cf0f115d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82a3db365b9c0b70e127b5f4e60b4da7') in 0.009248 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Graphics/Characters/whitePawn.png
+  artifactKey: Guid(47b724ef5f1f4bc48a608c80df4940df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/whitePawn.png using Guid(47b724ef5f1f4bc48a608c80df4940df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e883b60c5e1cd5f5bf2bbc18e48b98fd') in 0.008340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Graphics/Characters/blackPawn.png
+  artifactKey: Guid(03eeda42f4c4db5458d4441eb8049128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackPawn.png using Guid(03eeda42f4c4db5458d4441eb8049128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8934fc6b38b4dc00e12a816bc5a51d91') in 0.014158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Graphics/Characters/blackKnight.png
+  artifactKey: Guid(51758841b7ebece46b8c25b547faed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackKnight.png using Guid(51758841b7ebece46b8c25b547faed45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fa3298137b781659021ca953c5acd19') in 0.008446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Graphics/Characters/blackKing.png
+  artifactKey: Guid(68fbc23387e93dd4da9cb42902f527d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/blackKing.png using Guid(68fbc23387e93dd4da9cb42902f527d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae102c227d7483d53d98462c3952f935') in 0.008200 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.32 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 23 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.8 MB.
+System memory in use after: 68.9 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 4219.
+Total: 3.791500 ms (FindLiveObjects: 0.279700 ms CreateObjectMapping: 0.189600 ms MarkObjects: 3.230700 ms  DeleteObjects: 0.090600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.13 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 23 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.8 MB.
+System memory in use after: 68.9 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 4219.
+Total: 3.243900 ms (FindLiveObjects: 0.272200 ms CreateObjectMapping: 0.186800 ms MarkObjects: 2.642400 ms  DeleteObjects: 0.141800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
