@@ -143,26 +143,29 @@ public class Game : MonoBehaviour
                                 //stepping 2 forward at beggining
                                 if (currentTeam == Team.White)
                                 {
-                                    if (x == 6) //should be y but buggy
+
+                                    Vector2 abs1Position = selectedCell.transform.position + Vector3.up;
+                                    GetCellCoordDirect(abs1Position, out int testX2, out int testY2);
+                                    if (!(testX2 == 9 || testY2 == 9))
                                     {
-                                        Vector2 absPosition = selectedCell.transform.position + Vector3.up * 2;
-                                        GetCellCoordDirect(absPosition, out int testX, out int testY);
-                                        if (!(testX == 9 || testY == 9))
+                                        Cell testCell = cells[testX2, testY2].GetComponent<Cell>();
+                                        if (testCell.connected == null)
                                         {
-                                            Cell testCell = cells[testX, testY].GetComponent<Cell>();
-                                            if (testCell.connected == null)
+                                            testCell.GetComponent<SpriteRenderer>().color = new Color(.2f, .9f, .3f);
+                                            possibleMoves.Enqueue(cells[testX2, testY2]);
+                                            
+                                            if (x == 6) //should be y but buggy
                                             {
-                                                testCell.GetComponent<SpriteRenderer>().color = new Color(.2f, .9f, .3f);
-                                                possibleMoves.Enqueue(cells[testX, testY]);
-                                                Vector2 abs1Position = selectedCell.transform.position + Vector3.up;
-                                                GetCellCoordDirect(abs1Position, out int testX2, out int testY2);
-                                                if (!(testX2 == 9 || testY2 == 9))
+                                                Vector2 absPosition = selectedCell.transform.position + Vector3.up * 2;
+                                                GetCellCoordDirect(absPosition, out int testX, out int testY);
+                                                if (!(testX == 9 || testY == 9))
                                                 {
-                                                    testCell = cells[testX2, testY2].GetComponent<Cell>();
+                                                    testCell = cells[testX, testY].GetComponent<Cell>();
                                                     if (testCell.connected == null)
                                                     {
                                                         testCell.GetComponent<SpriteRenderer>().color = new Color(.2f, .9f, .3f);
-                                                        possibleMoves.Enqueue(cells[testX2, testY2]);
+                                                        possibleMoves.Enqueue(cells[testX, testY]);
+                                                
                                                     }
                                                 }
                                             }
@@ -204,27 +207,28 @@ public class Game : MonoBehaviour
                                 }
                                 else
                                 {
-                                    if (x == 1)
+
+                                    Vector2 abs1Position = selectedCell.transform.position + Vector3.down;
+                                    GetCellCoordDirect(abs1Position, out int testX2, out int testY2);
+                                    if (!(testX2 == 9 || testY2 == 9))
                                     {
-                                        Vector2 absPosition = selectedCell.transform.position + Vector3.down * 2;
-                                        GetCellCoordDirect(absPosition, out int testX, out int testY);
-                                        if (!(testX == 9 || testY == 9))
+                                        Cell testCell = cells[testX2, testY2].GetComponent<Cell>();
+                                        if (testCell.connected == null)
                                         {
-                                            Cell testCell = cells[testX, testY].GetComponent<Cell>();
-                                            if (testCell.connected == null)
+                                            testCell.GetComponent<SpriteRenderer>().color = new Color(.2f, .9f, .3f);
+                                            possibleMoves.Enqueue(cells[testX2, testY2]);
+                                            
+                                            if (x == 1)
                                             {
-                                                testCell.GetComponent<SpriteRenderer>().color =
-                                                    new Color(.2f, .9f, .3f);
-                                                possibleMoves.Enqueue(cells[testX, testY]);
-                                                Vector2 abs1Position = selectedCell.transform.position + Vector3.down;
-                                                GetCellCoordDirect(abs1Position, out int testX2, out int testY2);
-                                                if (!(testX2 == 9 || testY2 == 9))
+                                                Vector2 absPosition = selectedCell.transform.position + Vector3.down * 2;
+                                                GetCellCoordDirect(absPosition, out int testX, out int testY);
+                                                if (!(testX == 9 || testY == 9))
                                                 {
-                                                    testCell = cells[testX2, testY2].GetComponent<Cell>();
+                                                    testCell = cells[testX, testY].GetComponent<Cell>();
                                                     if (testCell.connected == null)
                                                     {
                                                         testCell.GetComponent<SpriteRenderer>().color = new Color(.2f, .9f, .3f);
-                                                        possibleMoves.Enqueue(cells[testX2, testY2]);
+                                                        possibleMoves.Enqueue(cells[testX, testY]);
                                                     }
                                                 }
                                             }
