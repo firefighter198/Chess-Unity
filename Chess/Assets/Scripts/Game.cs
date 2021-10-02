@@ -154,24 +154,23 @@ public class Game : MonoBehaviour
                                             {
                                                 testCell.GetComponent<SpriteRenderer>().color = new Color(.2f, .9f, .3f);
                                                 possibleMoves.Enqueue(cells[testX, testY]);
+                                                Vector2 abs1Position = selectedCell.transform.position + Vector3.up;
+                                                GetCellCoordDirect(abs1Position, out int testX2, out int testY2);
+                                                if (!(testX2 == 9 || testY2 == 9))
+                                                {
+                                                    testCell = cells[testX2, testY2].GetComponent<Cell>();
+                                                    if (testCell.connected == null)
+                                                    {
+                                                        testCell.GetComponent<SpriteRenderer>().color = new Color(.2f, .9f, .3f);
+                                                        possibleMoves.Enqueue(cells[testX2, testY2]);
+                                                    }
+                                                }
                                             }
                                         }
                                     }
 
-                                    Vector2 abs2Position = selectedCell.transform.position + Vector3.up;
-                                    GetCellCoordDirect(abs2Position, out int testX2, out int testY2);
-                                    if (!(testX2 == 9 || testY2 == 9))
-                                    {
-                                        Cell testCell = cells[testX2, testY2].GetComponent<Cell>();
-                                        if (testCell.connected == null)
-                                        {
-                                            testCell.GetComponent<SpriteRenderer>().color = new Color(.2f, .9f, .3f);
-                                            possibleMoves.Enqueue(cells[testX2, testY2]);
-                                        }
-                                    }
 
-                                    
-                                    abs2Position = selectedCharacter.transform.position + Vector3.up + Vector3.right;
+                                    Vector2 abs2Position = selectedCharacter.transform.position + Vector3.up + Vector3.right;
                                     GetCellCoordDirect(abs2Position, out int testX3, out int testY3);
                                     if (!(testX3 == 9 || testY3 == 9))
                                     {
@@ -217,23 +216,23 @@ public class Game : MonoBehaviour
                                                 testCell.GetComponent<SpriteRenderer>().color =
                                                     new Color(.2f, .9f, .3f);
                                                 possibleMoves.Enqueue(cells[testX, testY]);
+                                                Vector2 abs1Position = selectedCell.transform.position + Vector3.down;
+                                                GetCellCoordDirect(abs1Position, out int testX2, out int testY2);
+                                                if (!(testX2 == 9 || testY2 == 9))
+                                                {
+                                                    testCell = cells[testX2, testY2].GetComponent<Cell>();
+                                                    if (testCell.connected == null)
+                                                    {
+                                                        testCell.GetComponent<SpriteRenderer>().color = new Color(.2f, .9f, .3f);
+                                                        possibleMoves.Enqueue(cells[testX2, testY2]);
+                                                    }
+                                                }
                                             }
                                         }
                                     }
-
-                                    Vector2 abs2Position = selectedCell.transform.position + Vector3.down;
-                                    GetCellCoordDirect(abs2Position, out int testX2, out int testY2);
-                                    if (!(testX2 == 9 || testY2 == 9))
-                                    {
-                                        Cell testCell = cells[testX2, testY2].GetComponent<Cell>();
-                                        if (testCell.connected == null)
-                                        {
-                                            testCell.GetComponent<SpriteRenderer>().color = new Color(.2f, .9f, .3f);
-                                            possibleMoves.Enqueue(cells[testX2, testY2]);
-                                        }
-                                    }
                                     
-                                    abs2Position = selectedCharacter.transform.position + Vector3.down + Vector3.right;
+                                    
+                                    Vector2 abs2Position = selectedCharacter.transform.position + Vector3.down + Vector3.right;
                                     GetCellCoordDirect(abs2Position, out int testX3, out int testY3);
                                     if (!(testX3 == 9 || testY3 == 9))
                                     {
