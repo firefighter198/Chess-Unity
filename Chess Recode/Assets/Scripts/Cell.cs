@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Cell : MonoBehaviour
 {
-    public GameObject connected;
+    public Character connected;
 }
