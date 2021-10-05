@@ -20,18 +20,18 @@ public class Knight : Character
         new Vector2(-2, 1),
         new Vector2(-2, -1),
     };
-    
+
     public override bool[,] GetValidMoves(Cell[,] cells, Game game)
     {
         bool[,] result = new bool[8, 8];
-        
+
         foreach (Vector2 move in moves)
         {
             Vector3 testPosition = transform.position + (Vector3)move;
 
             Cell testCell = game.GetCellOnPosition(testPosition + Vector3.back);
 
-            if(testCell != null)
+            if (testCell != null)
             {
                 int x, y;
 
@@ -40,20 +40,18 @@ public class Knight : Character
 
                 x = int.Parse(nameX);
                 y = int.Parse(nameY);
-                
-                if (IsPositionInGrid(x, y))
+
+
+                if (testCell.connected == null)
                 {
-                    if (testCell.connected == null)
+                    result[x, y] = true;
+                }
+                else
+                {
+                    Character testCharacter = testCell.connected;
+                    if (testCharacter.team != game.currentTeam)
                     {
                         result[x, y] = true;
-                    }
-                    else
-                    {
-                        Character testCharacter = testCell.connected;
-                        if (testCharacter.team != game.currentTeam)
-                        {
-                            result[x, y] = true;
-                        }
                     }
                 }
             }

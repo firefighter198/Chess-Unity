@@ -6,7 +6,6 @@ public class Rook : Character
 {
     private static readonly Vector2[,] moves =
     {
-
         {
             //up
             new Vector2(0, 1),
@@ -55,12 +54,52 @@ public class Rook : Character
             new Vector2(-8.5f, 0)
         }
     };
-    
+
     public override bool[,] GetValidMoves(Cell[,] cells, Game game)
     {
         bool[,] result = new bool[8, 8];
-        
-        
+
+        for (int i = 0; i < 4; i++)
+        {
+            for (int j = 0; j < 8; j++)
+            {
+                Vector3 testPosition = transform.position + (Vector3)moves[i, j];
+                Cell testCell = game.GetCellOnPosition(testPosition);
+
+                if(testCell != null)
+                {
+                    if (testCell.connected == null)
+                    {
+                        int x, y;
+
+                        string nameX = testCell.gameObject.name.Substring(5, 1);
+                        string nameY = testCell.gameObject.name.Substring(7, 1);
+
+                        x = int.Parse(nameX);
+                        y = int.Parse(nameY);
+
+                        result[x, y] = true;
+                    }
+                    else
+                    {
+                        if (testCell.connected.team != game.currentTeam)
+                        {
+                            int x, y;
+
+                            string nameX = testCell.gameObject.name.Substring(5, 1);
+                            string nameY = testCell.gameObject.name.Substring(7, 1);
+
+                            x = int.Parse(nameX);
+                            y = int.Parse(nameY);
+
+                            result[x, y] = true;
+                        }
+
+                        j = 8;
+                    }
+                }
+            }
+        }
 
         return result;
     }

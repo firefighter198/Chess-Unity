@@ -40,7 +40,7 @@ public class Game : MonoBehaviour
                     Destroy(tempCell.connected.gameObject);
                 }
                 tempCell.connected = clickedCell.connected;
-                tempCell.connected.gameObject.transform.position = (tempCell.gameObject.transform.position);
+                tempCell.connected.gameObject.transform.position = (tempCell.gameObject.transform.position + Vector3.back);
                 
                 clickedCell.connected = null;
                 DeColorAllCells();

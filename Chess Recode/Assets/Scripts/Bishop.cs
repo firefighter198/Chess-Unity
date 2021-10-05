@@ -4,8 +4,104 @@ using UnityEngine;
 
 public class Bishop : Character
 {
+    public static readonly Vector2[,] moves =
+    {
+        {
+            //up, right
+            new Vector2(1, 1),
+            new Vector2(2, 2),
+            new Vector2(3, 3),
+            new Vector2(4, 4),
+            new Vector2(5, 5),
+            new Vector2(6, 6),
+            new Vector2(7, 7),
+            new Vector2(8.5f, 8.5f),
+        },
+
+        {
+            //up, left
+            new Vector2(-1, 1),
+            new Vector2(-2, 2),
+            new Vector2(-3, 3),
+            new Vector2(-4, 4),
+            new Vector2(-5, 5),
+            new Vector2(-6, 6),
+            new Vector2(-7, 7),
+            new Vector2(-8.5f, 8.5f),
+        },
+
+        {
+            //down, right
+            new Vector2(1, -1),
+            new Vector2(2, -2),
+            new Vector2(3, -3),
+            new Vector2(4, -4),
+            new Vector2(5, -5),
+            new Vector2(6, -6),
+            new Vector2(7, -7),
+            new Vector2(8.5f, -8.5f),
+        },
+
+        {
+            //down, left
+            new Vector2(-1, -1),
+            new Vector2(-2, -2),
+            new Vector2(-3, -3),
+            new Vector2(-4, -4),
+            new Vector2(-5, -5),
+            new Vector2(-6, -6),
+            new Vector2(-7, -7),
+            new Vector2(-8.5f, -8.5f),
+        }
+    };
+
+
     public override bool[,] GetValidMoves(Cell[,] cells, Game game)
     {
-        return null;
+        bool[,] result = new bool[8, 8];
+
+        for (int i = 0; i < 4; i++)
+        {
+            for (int j = 0; j < 8; j++)
+            {
+                Vector3 testPosition = transform.position + (Vector3)moves[i, j];
+                Cell testCell = game.GetCellOnPosition(testPosition);
+
+                if (testCell != null)
+                {
+                    if (testCell.connected == null)
+                    {
+                        int x, y;
+
+                        string nameX = testCell.gameObject.name.Substring(5, 1);
+                        string nameY = testCell.gameObject.name.Substring(7, 1);
+
+                        x = int.Parse(nameX);
+                        y = int.Parse(nameY);
+
+                        result[x, y] = true;
+                    }
+                    else
+                    {
+                        if (testCell.connected.team != game.currentTeam)
+                        {
+                            int x, y;
+
+                            string nameX = testCell.gameObject.name.Substring(5, 1);
+                            string nameY = testCell.gameObject.name.Substring(7, 1);
+
+                            x = int.Parse(nameX);
+                            y = int.Parse(nameY);
+
+                            result[x, y] = true;
+                        }
+
+                        j = 8;
+                    }
+                }
+            }
+        }
+
+        return result;
     }
 }
