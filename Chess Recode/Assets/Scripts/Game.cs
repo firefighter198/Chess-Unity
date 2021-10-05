@@ -16,7 +16,6 @@ public class Game : MonoBehaviour
 
     private Cell clickedCell = null;
     private List<Cell> validMovesList = new List<Cell>();
-
     public bool isPaused = false;
 
     private void Start()
@@ -44,50 +43,128 @@ public class Game : MonoBehaviour
             //Check if left clicked
             if (Input.GetMouseButtonDown(0))
             {
-                //Get the clicked cell
-                Cell tempCell = GetCellOnPositionMouse(Input.mousePosition);
-
-                if (tempCell != null)
+                if(areKilledCellsActive && (currentTeam == Teams.White && indexKilledCharacCellWhite == 0 || currentTeam == Teams.Black && indexKilledCharacCellBlack == 0) )
                 {
-                    if (validMovesList.Contains(tempCell))
+                    areKilledCellsActive = false;
+                    DeColorAllCells();
+                    if (currentTeam == Teams.White)
                     {
-                        if (tempCell.connected != null)
-                        {
-                            if (tempCell.connected.team == Teams.White)
-                            {
-
-                                tempCell.connected.gameObject.transform.position = killedCharacCellsWhite[indexKilledCharacCellWhite].gameObject.transform.position + Vector3.back;
-                                killedCharacCellsWhite[indexKilledCharacCellWhite].connected = tempCell.connected;
-                                indexKilledCharacCellWhite++;
-                            }
-                            else
-                            {
-                                tempCell.connected.gameObject.transform.position = killedCharacCellsBlack[indexKilledCharacCellBlack].gameObject.transform.position + Vector3.back;
-                                killedCharacCellsBlack[indexKilledCharacCellBlack].connected = tempCell.connected;
-                                indexKilledCharacCellBlack++;
-                                
-                            }
-                        }
-
-                        tempCell.connected = clickedCell.connected;
-                        tempCell.connected.gameObject.transform.position =
-                            (tempCell.gameObject.transform.position + Vector3.back);
-
-                        clickedCell.connected = null;
-                        DeColorAllCells();
-                        validMovesList.Clear();
-
-                        if (currentTeam == Teams.White)
-                        {
-                            currentTeam = Teams.Black;
-                        }
-                        else
-                        {
-                            currentTeam = Teams.White;
-                        }
+                        currentTeam = Teams.Black;
                     }
                     else
                     {
+                        currentTeam = Teams.White;
+                    }
+                }
+                
+                //Get the clicked cell
+                Cell tempCell = GetCellOnPositionMouse(Input.mousePosition);
+
+                //check the clicked cell is valid
+                if (tempCell != null)
+                {
+
+                    //check if player has the possibilty to revive a character and kill his pawn
+                        if (areKilledCellsActive)
+                        {
+                            //destroy the pawn
+                            Destroy(clickedCell.connected.gameObject);
+                            //connect the revived character to the pawns field
+                            clickedCell.connected = tempCell.connected;
+                            clickedCell.connected.gameObject.transform.position =
+                                clickedCell.gameObject.transform.position + Vector3.back;
+                            //change the team
+                            if (currentTeam == Teams.White)
+                            {
+                                currentTeam = Teams.Black;
+                            }
+                            else
+                            {
+                                currentTeam = Teams.White;
+                            }
+
+                            areKilledCellsActive = false;
+                            DeColorAllCells();
+                            clickedCell = null;
+                        }
+
+                        //check if clicked cell is "a green field"
+                        if (validMovesList.Contains(tempCell))
+                        {
+                            //check if there's a others color character on the cell
+                            if (tempCell.connected != null)
+                            {
+                                if (tempCell.connected.team == Teams.White)
+                                {
+                                    //remove the character from the game field
+
+                                    tempCell.connected.gameObject.transform.position =
+                                        killedCharacCellsWhite[indexKilledCharacCellWhite].gameObject.transform
+                                            .position +
+                                        Vector3.back;
+                                    killedCharacCellsWhite[indexKilledCharacCellWhite].connected = tempCell.connected;
+                                    indexKilledCharacCellWhite++;
+                                }
+                                else
+                                {
+                                    tempCell.connected.gameObject.transform.position =
+                                        killedCharacCellsBlack[indexKilledCharacCellBlack].gameObject.transform
+                                            .position +
+                                        Vector3.back;
+                                    killedCharacCellsBlack[indexKilledCharacCellBlack].connected = tempCell.connected;
+                                    indexKilledCharacCellBlack++;
+                                }
+                            }
+
+                            tempCell.connected = clickedCell.connected;
+                            tempCell.connected.gameObject.transform.position =
+                                tempCell.gameObject.transform.position + Vector3.back;
+                            if (tempCell.connected.GetComponent<Pawn>() != null)
+                            {
+                                Pawn testPawn = tempCell.connected.GetComponent<Pawn>();
+
+                                int endCellY;
+
+                                if (testPawn.team == Teams.White)
+                                {
+                                    endCellY = 0;
+                                }
+                                else
+                                {
+                                    endCellY = 7;
+                                }
+
+                                int x, y;
+
+                                string nameX = tempCell.gameObject.name.Substring(7, 1);
+                                string nameY = tempCell.gameObject.name.Substring(5, 1);
+
+                                x = int.Parse(nameX);
+                                y = int.Parse(nameY);
+
+                                if (y == endCellY)
+                                {
+                                    areKilledCellsActive = true;
+                                }
+                            }
+
+                            clickedCell.connected = null;
+                            DeColorAllCells();
+                            validMovesList.Clear();
+
+                            if (!areKilledCellsActive)
+                            {
+                                if (currentTeam == Teams.White)
+                                {
+                                    currentTeam = Teams.Black;
+                                }
+                                else
+                                {
+                                    currentTeam = Teams.White;
+                                }
+                            }
+                        }
+
                         //if the clickedCell == tempCell, deselect the cell
                         if (clickedCell == tempCell)
                         {
@@ -100,8 +177,9 @@ public class Game : MonoBehaviour
                         {
                             clickedCell = tempCell;
                             ColorCellExclusive(clickedCell, new Color(.5f, .1f, .1f));
-                        }
+                        
                     }
+                    
                 }
 
                 //check if there is a clicked cell
@@ -212,7 +290,9 @@ public class Game : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(position, Vector3.forward);
         if (hit.collider != null)
         {
-            if (ArrayContainsCell2D(hit.collider.gameObject.GetComponent<Cell>(), cells) || areKilledCellsActive)
+            if (ArrayContainsCell2D(hit.collider.gameObject.GetComponent<Cell>(), cells) && !areKilledCellsActive||
+                areKilledCellsActive && ArrayContainsCell1D(hit.collider.gameObject.GetComponent<Cell>(), killedCharacCellsWhite) ||
+                    areKilledCellsActive && ArrayContainsCell1D(hit.collider.gameObject.GetComponent<Cell>(), killedCharacCellsBlack))
             {
                 result = hit.collider.gameObject.GetComponent<Cell>();
             }
@@ -232,6 +312,19 @@ public class Game : MonoBehaviour
                 {
                     return true;
                 }
+            }
+        }
+
+        return false;
+    }
+
+    private bool ArrayContainsCell1D(Cell cell, Cell[] cells)
+    {
+        for (int i = 0; i < cells.Length; i++)
+        {
+            if (cells[i] == cell)
+            {
+                return true;
             }
         }
 
