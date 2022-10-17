@@ -1,5 +1,7 @@
 A chess game for android and windows
 
+Source code available in this directory: https://github.com/jonasbraus/Chess-Unity/tree/main/Chess%20Recode/Assets/Scripts
+
 For Windows:
 
 1. Download the following zip file and unpack it: https://github.com/jonasbraus/Chess-Unity/releases/download/Win/Chess.zip
